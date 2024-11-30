@@ -40,8 +40,6 @@ function WeatherTable({ data, summary }) {
     if (!Array.isArray(data) || data.length === 0) {
         return;
     }
-    console.log(data);
-    console.log(summary);
 
     return (
         <table className="weather-table">
