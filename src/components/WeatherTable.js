@@ -36,6 +36,14 @@ const getWeatherIcon = (weatherCode) => {
     }
 };
 
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+}
+
 function WeatherTable({ data, summary }) {
     if (!Array.isArray(data) || data.length === 0) {
         return;
@@ -55,7 +63,7 @@ function WeatherTable({ data, summary }) {
             <tbody>
                 {data.map((day, index) => (
                     <tr key={index}>
-                        <td>{day.date}</td>
+                        <td>{formatDate(day.date)}</td>
                         <td>
                             <i className={`wi ${getWeatherIcon(day.weather_code)}`}></i>
                         </td>
