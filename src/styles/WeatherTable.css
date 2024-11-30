@@ -1,7 +1,7 @@
 .weather-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 10px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     font-family: Arial, sans-serif;
@@ -56,4 +56,18 @@ body.dark-mode .weather-table tfoot tr{
 
 body.dark-mode .weather-table tfoot tr:hover {
     background-color: #3e7040;
+}
+
+@media (max-width: 768px) {
+    .weather-table th, .weather-table td {
+      font-size: 14px;
+      padding: 8px 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .weather-table th, .weather-table td {
+      font-size: 12px;
+      padding: 5px 3px;
+    }
 }

@@ -41,7 +41,7 @@ function LocationInput({ setWeatherData, setWeeklySummary }) {
     }, []);
 
     return (
-        <div>
+        <div className="input-box">
             <input
                 type="number"
                 placeholder="Latitude"
