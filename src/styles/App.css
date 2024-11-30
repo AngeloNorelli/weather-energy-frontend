@@ -3,3 +3,36 @@
     font-family: Arial, sanse-serif;
     padding: 20px;
 }
+
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+body.dark-mode {
+background-color: #121212;
+color: #fff;
+}
+
+#darkModeSwitch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+body.dark-mode #darkModeSwitch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}

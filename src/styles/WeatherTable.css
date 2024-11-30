@@ -25,8 +25,16 @@
     background-color: #f9f9f9;
 }
 
+body.dark-mode .weather-table tr {
+    background-color: #121212;
+}
+
 .weather-table tr:hover {
     background-color: #f1f1f1;
+}
+
+body.dark-mode .weather-table tr:hover {
+    background-color: #2e2e2e;
 }
 
 .weather-icon {
@@ -36,4 +44,16 @@
 
 .weather-table tfoot {
     background-color: #69b46c;
+}
+
+body.dark-mode .weather-table tfoot tr{
+    background-color: #4f8b51;
+}
+
+.weather-table tfoot tr:hover {
+    background-color: #79b47b;
+}
+
+body.dark-mode .weather-table tfoot tr:hover {
+    background-color: #3e7040;
 }
